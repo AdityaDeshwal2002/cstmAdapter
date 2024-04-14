@@ -1,0 +1,38 @@
+package com.example.cstmadapter;
+
+import android.content.Context;
+import android.view.ContextMenu;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public class cstmAdapter extends BaseAdapter {
+    private Context context;
+    private String[] itemsArray;
+    public cstmAdapter(Context context, String[] itemsArray){
+        this.context = context;
+        this.itemsArray = itemsArray;
+    }
+
+    @Override
+    public int getCount() {
+        return itemsArray.length;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return itemsArray[position];
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        convertView =  LayoutInflater.from(context).inflate(R.layout.cstm_listview_view,parent,false);
+        return convertView;
+    }
+}
