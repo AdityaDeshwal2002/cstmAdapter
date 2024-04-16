@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="customColorArray">
+        <item>Magenta</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Black</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>White</item>
+        <item>Violet</item>
+        <item>Saffron</item>
+        <item>Yellow</item>
+        <item>Brown</item>
+        <item>Turquoise</item>
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Maroon</item>
+        <item>Teal</item>
+        <item>Olive</item>
+        <item>Peach</item>
+        <item>Ivory</item>
+        <item>Beige</item>
+        <item>Mint</item>
+        <item>Salmon</item>
+        <item>Navy</item>
+        <item>Slate</item>
+        <item>Charcoal</item>
+        <item>Plum</item>
+        <item>Khaki</item>
+        <item>Sand</item>
+        <item>Ruby</item>
+        <item>Emerald</item>
+        <item>Sapphire</item>
+        <item>Amber</item>
+        <item>Ebony</item>
+        <item>Crimson</item>
+        <item>Lilac</item>
+        <item>Garnet</item>
+    </string-array>
+</resources>

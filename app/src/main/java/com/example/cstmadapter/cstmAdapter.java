@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 public class cstmAdapter extends BaseAdapter {
     private Context context;
@@ -32,7 +33,24 @@ public class cstmAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView =  LayoutInflater.from(context).inflate(R.layout.cstm_listview_view,parent,false);
+        ViewHolder holder;
+        if (convertView == null){
+
+            convertView =  LayoutInflater.from(context).inflate(R.layout.cstm_listview_view,parent,false);
+
+            holder = new ViewHolder();
+            holder.textView = convertView.findViewById(R.id.ItemmsView);
+            convertView.setTag(holder);
+        }
+        else {
+            holder = (ViewHolder) convertView.getTag();
+        }
+
+        holder.textView.setText(itemsArray[position]);
         return convertView;
+    }
+
+    class ViewHolder{
+        TextView textView;
     }
 }
